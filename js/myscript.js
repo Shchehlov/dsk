@@ -3,7 +3,7 @@ $(document).ready(function(){
     $('.header_slider').slick({
         responsive: [
             {
-                breakpoint: 780,
+                breakpoint: 970,
                 settings: {
                     arrows: false,
                     dots: true

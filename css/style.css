@@ -935,6 +935,7 @@ footer .dev{
     text-decoration: none;
     background-repeat: no-repeat;
     background-position: center right;
+    background-size: auto 100%;
 }
 .header_slider .slide:before{
     content: '';
@@ -1010,6 +1011,71 @@ footer .dev{
 @media screen and (max-width: 1400px){
     .header{
         padding: 0;
+    }
+}
+@media screen and (max-width: 969px){
+    .header_slider{
+        margin-bottom: 60px;
+        border-right: none;
+        border-left: none;
+    }
+    .header_slider .slick-dots{
+        bottom: -60px;
+    }
+    .header_slider .slide{
+        height: 469px;
+    }
+    .header_slider .slide_info{
+        padding: 60px 0px 0px 50px;
+    }
+    .header_slider .slide .date .num{
+        font-size: 64px;
+    }
+    .header_slider .slide .date .month{
+        font-size: 17px;
+        margin-top: -8px;
+    }
+    .header_slider .slide .date:before{
+        height: 135px;
+    }
+    .header_slider .slide .name{
+        font-size: 30px;
+        line-height: 36px;
+        margin-top: 82px;
+        max-width: 340px;
+    }
+}
+@media screen and (max-width: 650px){
+    .header_slider{
+        margin-bottom: 40px;
+        border-right: none;
+        border-left: none;
+    }
+    .header_slider .slick-dots{
+        bottom: -40px;
+    }
+    .header_slider .slide{
+        height: 220px;
+    }
+    .header_slider .slide_info{
+        padding: 25px 0px 0px 20px;
+    }
+    .header_slider .slide .date .num{
+        font-size: 32.04px;
+    }
+    .header_slider .slide .date .month{
+        font-size: 11px;
+        margin-top: -5px;
+    }
+    .header_slider .slide .date:before{
+        height: 68px;
+        left: -9px;
+    }
+    .header_slider .slide .name{
+        font-size: 14px;
+        line-height: 18px;
+        margin-top: 21px;
+        max-width: 140px;
     }
 }
 
