@@ -75,4 +75,9 @@ $(document).ready(function(){
         $('.news_page .calendar').appendTo('.news_page .calendar_mob');
     }
     
+    $('.structure_bl .second_lvl').on('click',function(){
+        $(this).toggleClass('show');
+        $(this).next().slideToggle();
+    });
+    
 });
