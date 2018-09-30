@@ -969,8 +969,7 @@ footer .dev{
 .header_slider .slide .date{
     position: relative;
 }
-.header_slider .slide .date:before{
-    content: '';
+.header_slider .slide .decor{
     width: 98px;
     height: 160px;
     background: url(../img/slider-date.png) no-repeat;
