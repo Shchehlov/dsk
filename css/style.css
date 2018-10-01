@@ -996,7 +996,7 @@ footer .dev{
     font: 36px 'Rubik-Bold';
     color: #2c3d5a;
     line-height: 43px;
-    max-width: 420px;
+    width: 420px;
     margin-top: 91px;
     position: relative;
 }
@@ -1057,6 +1057,7 @@ footer .dev{
         font-size: 30px;
         line-height: 36px;
         margin-top: 82px;
+        width: 100%;
         max-width: 340px;
     }
 }
@@ -1367,13 +1368,18 @@ footer .dev{
     margin-top: 20px;
 }
 .inner_header .content_width{
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+    min-height: 140px;
+    display:-webkit-box;
+    display:-ms-flexbox;
+    display:flex;
     -webkit-box-align: end;
     -ms-flex-align: end;
     align-items: flex-end;
-    min-height: 140px;
+}
+.inner_header .content_width:after{
+    content:'';
+    min-height:inherit;
+    font-size:0;
 }
 .broad_bl{
     height: auto;
