@@ -1369,22 +1369,14 @@ footer .dev{
 }
 .inner_header .content_width{
     min-height: 140px;
-    display:-webkit-box;
-    display:-ms-flexbox;
-    display:flex;
-    -webkit-box-align: end;
-    -ms-flex-align: end;
-    align-items: flex-end;
-}
-.inner_header .content_width:after{
-    content:'';
-    min-height:inherit;
-    font-size:0;
+    position: relative;
 }
 .broad_bl{
     height: auto;
     max-width: 770px;
     margin-top: auto;
+    position: absolute;
+    bottom: 0;
     margin-bottom: 25px;
 }
 .broad_bl a{
@@ -1433,7 +1425,9 @@ footer .dev{
         min-height: auto;
     }
     .broad_bl{
-        margin: 25px 0;
+        padding: 25px 0;
+        margin: 0;
+        position: static;
         box-sizing: border-box;
     }
 }
